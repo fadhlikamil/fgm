@@ -1,0 +1,407 @@
+::selection {
+    background-color: #113d74; 
+    color: white; 
+}
+
+body {
+    background-image: url(Background.png);
+    background-attachment: fixed;
+    background-size: cover; /* Memastikan gambar mencakup seluruh area */
+    background-position: center;
+    font-family: "YAFdJj8NdaU 0", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    overflow-y: scroll;
+}
+
+.top-left-image {
+    width: 80px;
+    height: auto;
+    margin: 50px;
+}   
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10 20px; 
+    font-weight: 850;
+    display: flex;
+    align-items: center; 
+    height: 50px; 
+    z-index: 1000;
+    justify-content: right;
+}
+
+nav a{
+    padding-top: 5px;
+}
+
+nav-links{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #081C35;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #164986;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #081C35;
+
+}
+
+@media (max-width: 768px) {
+.menu-toggle {
+    display: block;
+    padding-right: 20px;
+}
+
+.nav-links {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease, padding 0.3s ease;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 100%;
+    gap: 20px;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-links.active {
+    padding: 10px 0;
+    height: 200px;
+}
+
+.nav-links li a {
+    padding: 10px;
+    color: #081C35;
+    text-align: center;
+    
+}
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; 
+    flex-grow: 1; 
+}
+
+nav ul li {
+    margin: 0 15px; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s; 
+}
+
+nav ul li a:hover {
+    color: #b6b6b6; 
+}
+
+header {
+    background-color: white;
+    color: #081C35;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+.image-container {
+    display: grid;
+    gap: 10px; /* Jarak antar gambar */
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto; /* Tengah di halaman */
+}
+
+/* Styling untuk gambar */
+.image-container img {
+    width: 100%; /* Lebar gambar mengikuti grid */
+    object-fit: cover; /* Menjaga proporsi gambar */
+    border-radius: 10px; /* Membuat sudut gambar melengkung */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+}
+
+.table-container h1 {
+    background-color: #d30000; /* Merah sesuai contoh */
+    color: white;
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+}
+
+.table-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.table-container img{
+    width: 150px;
+    height: auto;
+    margin: auto;
+    object-fit: cover;
+}
+
+table {
+    border-collapse: collapse;
+    flex: 1;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #6e6e6e; /* Warna abu-abu */
+    color: white;
+    font-weight: bold;
+}
+
+/* Merge cell DN */
+.dn-header {
+    background-color: #6e6e6e;
+}
+
+.sub-header {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn-download {
+    display: inline-block;
+    background-color: #081C35;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 40px;
+}
+
+.btn-download:hover {
+    background-color: #08001b;
+}
+
+.btn-contact {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 40px;
+}
+
+.btn-contact:hover {
+    background-color: #45a049;
+}
+
+.footer {
+    background-color: white;   
+    padding: 20px 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+    text-align: center;
+}
+
+.footer-logo-links {
+    flex: 1;
+    min-width: 200px;
+    padding-top: 20px ;
+}
+
+.footer-logo {
+    width: 150px;
+    margin: 0 auto 10px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: #081C35;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.footer-contact h4 {
+    margin-bottom: 10px;
+    color: #081C35;
+}
+
+.footer-contact p,
+.footer-contact a {
+    color: #081C35;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+.footer-media {
+    flex: 2;
+    min-width: 300px;
+    text-align: center;
+    color: #081C35;
+}
+
+.media-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.media-gallery img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: width 1s, height 1s;
+}
+
+.media-gallery img:hover{
+    width: 40px;
+    height: 40px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #090d4a;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #081C35;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo-links,
+    .footer-contact,
+    .footer-media {
+        flex: 1; 
+        margin-bottom: 20px; 
+        min-width: 100%;
+    }
+
+    .footer-logo {
+        width: 120px; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 10px; 
+    }
+
+    .footer-logo {
+        width: 100px; 
+    }
+
+    .footer-links li {
+        margin: 10px 0; 
+    }
+
+    .footer-contact h4 {
+        font-size: 14px; 
+    }
+
+    .footer-contact p,
+    .footer-contact a {
+        font-size: 12px; 
+    }
+}
+
+.table-container {
+    margin: 10px auto;
+    max-width: 900px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

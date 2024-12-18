@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="asset/farha.png">
+    <link rel="stylesheet" href="asset/katalog-style.css">
+    <title>Katalog Kami</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img src="asset/farha.png" alt="logo" class="top-left-image"></a>
+        <div class="menu-toggle" id="mobileMenu">☰</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="index.html#about">Tentang Kami</a></li>
+            <li><a href="katalog.html">Katalog</a></li>
+            <li><a href="index.html#why-choose-us" class="scroll-link">Kenapa Harus Kami</a></li>
+            <li><a href="index.html#contact">Hubungi Kami</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Katalog Produk</h1>
+        <p>Pilih produk terbaik kami dan pesan langsung via WhatsApp!</p>
+    </header>
+
+    <form class="search-form">
+        <input type="text" id="searchBar" class="search-input" placeholder="Cari Barang">
+    </form>
+
+    <section class="product-catalog">
+        <!-- Produk 1 -->
+        <div class="product-card">
+            <img src="asset/bata.jpg" alt="Produk 1" class="product-image">
+            <h3>Produk 1</h3>
+            <p>Harga: Rp100.000</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button class="open-modal" data-modal="modal" data-image="asset/1.jpg">Tampilkan Detail</button>
+        </div>
+
+        <!-- Produk 2 -->
+        <div class="product-card">
+            <img src="asset/kayu.jpg" alt="Produk 2" class="product-image">
+            <h3>Produk 2</h3>
+            <p>Harga: Rp200.000</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button class="open-modal" data-modal="modal" data-image="asset/2.jpg">Tampilkan Detail</button>
+        </div>
+
+        <!-- Produk 3 -->
+        <div class="product-card">
+            <img src="asset/pipa.jpg" alt="Produk 3" class="product-image">
+            <h3>Produk 3</h3>
+            <p>Harga: Rp300.000</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button class="open-modal" data-modal="modal" data-image="asset/3.jpg">Tampilkan Detail</button>
+        </div>
+
+
+        <!-- Produk 4 -->
+        <div class="product-card">
+            <img src="asset/bata.jpg" alt="Produk 4" class="product-image">
+            <h3>Produk 4</h3>
+            <p>Harga: Rp300.000</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button class="open-modal" data-modal="modal" data-image="asset/4.jpg">Tampilkan Detail</button>
+        </div>
+
+        <!-- Produk 5 -->
+        <div class="product-card">
+            <img src="asset/pipa.jpg" alt="Produk 5" class="product-image">
+            <h3>Produk 5</h3>
+            <p>Harga: Rp300.000</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button class="open-modal" data-modal="modal" data-image="asset/5.jpg">Tampilkan Detail</button>
+        </div>
+
+        <div class="product-card">
+            <img src="asset/pipa.jpg" alt="Produk 5" class="product-image">
+            <h3>Produk 5</h3>
+            <p>Harga: Rp300.000</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button class="open-modal" data-modal="modal" data-image="asset/6.jpg">Tampilkan Detail</button>
+        </div>
+        
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img src="" alt="Dynamic Image" id="modal-image" style="max-width: 100%; border-radius: 10px;">
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo-links">
+                <img src="asset/farha.png" alt="Logo Perusahaan" class="footer-logo">
+                <ul class="footer-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="index.html#about" class="scroll-link">Tentang Kami</a></li>
+                <li><a href="#catalogue">Katalog</a></li>
+                <li><a href="index.html#contact">Hubungi Kami</a></li>
+                </ul>
+            </div>
+  
+            <div class="footer-contact">
+                <h4>Hubungi Kami</h4>
+                <p>Alamat: <a href="https://maps.app.goo.gl/Jjq3q2D6VgwVqKqB8"> SOHO Dharmawangsa Hills, Jl. Dharmawangsa Selatan No.4A 2nd Floor, Benoa, Kec. Kuta Sel., Kabupaten Badung, Bali 80361</a></p>
+                <p>Nomor Telepon: <a href="https://wa.me/6285704760012">0857-0476-0012</a></p>
+                <p>Email: <a href="mailto:info.farhagrahamandiri@gmail.com">info.farhagrahamandiri@gmail.com</a></p>
+            </div>
+          
+            <div class="footer-media">
+                <h4>Temukan Kami</h4>
+                <div class="media-gallery">
+                    <a href="https://www.instagram.com/farhagrahamandiri/" target="_blank" rel="noopener noreferrer">
+                        <img src="asset/instagram-logo.png" alt="Media 1">
+                    </a>
+        
+                    <a href="https://wa.me/6285704760012" target="_blank" rel="noopener noreferrer">
+                        <img src="asset/whatsapp.png" alt="Media 2">
+                    </a>
+        
+                    <a href="https://www.facebook.com/farhagrahamandiri" target="_blank" rel="noopener noreferrer">
+                        <img src="asset/facebook.png" alt="Media 3">
+                    </a>
+        
+                    <a href="https://www.instagram.com/farhagrahamandiri/" target="_blank" rel="noopener noreferrer">
+                        <img src="asset/linkedin.png" alt="Media 4">
+                    </a>
+                </div>
+            </div>
+        </div>
+  
+        <div class="footer-bottom">
+            <p>We do not collect or process any personal data from users of this website. For inquiries, please contact info.farhagrahamandiri@gmail.com.</p>
+            <p>&copy; 2024 Farha Graha Mandiri. All rights reserverd</p>
+        </div>
+    </footer>
+  
+<script>
+    const searchBar = document.getElementById('searchBar');
+    const productCards = document.getElementsByClassName('product-card');
+
+    searchBar.addEventListener('input', function () {
+        const query = searchBar.value.toLowerCase();
+
+        Array.from(productCards).forEach(productCard => {
+            const productName = productCard.getElementsByTagName('h3')[0].textContent.toLowerCase();
+            const productDescription = productCard.getElementsByTagName('p')[0].textContent.toLowerCase();
+
+            if (productName.includes(query) || productDescription.includes(query)) {
+                productCard.style.display = "block";
+            } else {
+                productCard.style.display = "none";
+            }
+        });
+    });
+
+    const menuToggle = document.getElementById('mobileMenu');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.scroll-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault(); 
+        const targetId = this.getAttribute('href').substring(1); 
+        const targetElement = document.getElementById(targetId);
+
+        targetElement.scrollIntoView({
+        behavior: 'smooth', 
+        });
+    });
+    }); 
+
+    // Ambil semua tombol dengan class 'open-modal'
+    const openModalButtons = document.querySelectorAll('.open-modal');
+    // Ambil modal
+    const modal = document.getElementById('modal');
+    // Ambil elemen gambar di dalam modal
+    const modalImage = document.getElementById('modal-image');
+    // Ambil tombol close
+    const closeButton = modal.querySelector('.close');
+
+    // Tambahkan event listener ke setiap tombol untuk membuka modal
+    openModalButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const imageUrl = button.getAttribute('data-image'); // Ambil URL gambar dari data-image
+            modalImage.src = imageUrl; // Set src gambar di modal
+            modal.style.display = 'flex'; // Tampilkan modal
+        });
+    });
+
+    // Tambahkan event listener ke tombol close untuk menutup modal
+    closeButton.addEventListener('click', () => {
+        modal.style.display = 'none'; // Sembunyikan modal
+    });
+
+    // Tutup modal saat klik di luar modal-content
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none'; // Sembunyikan modal
+        }
+    });
+</script>
+</body>
+</html>
